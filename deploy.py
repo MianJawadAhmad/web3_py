@@ -26,3 +26,9 @@ with open("compiled_code.json", "w") as file:
 bytecode = compiled_sol["contracts"]["SimpleStorage.sol"]["SimpleStorage"]["evm"][
     "bytecode"
 ]["object"]
+
+
+# get abi
+abi = json.loads(
+    compiled_sol["contracts"]["SimpleStorage.sol"]["SimpleStorage"]["metadata"]
+)["output"]["abi"]
