@@ -32,3 +32,7 @@ bytecode = compiled_sol["contracts"]["SimpleStorage.sol"]["SimpleStorage"]["evm"
 abi = json.loads(
     compiled_sol["contracts"]["SimpleStorage.sol"]["SimpleStorage"]["metadata"]
 )["output"]["abi"]
+
+
+w3 = Web3(Web3.HTTPProvider(os.getenv("RINKEBY_RPC_URL")))
+chain_id = 4
