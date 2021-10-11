@@ -44,3 +44,4 @@ chain_id = 4
 # chain_id = 1337
 my_address = "0x643315C9Be056cDEA171F4e7b2222a4ddaB9F88D"
 private_key = os.getenv("PRIVATE_KEY")
+
